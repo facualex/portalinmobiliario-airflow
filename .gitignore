@@ -1,0 +1,11 @@
+.env
+deptosrm-env/
+logs/*
+data/*
+**/__pycache__/
+airflow.db
+airflow-webserver.pid
+webserver_config.py
+/include/gcp
+/include/soda/configuration.yml
+standalone_admin_password.txt

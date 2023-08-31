@@ -1,0 +1,11 @@
+checks for apartments_rm:
+  - schema:
+      fail:
+        when required column missing: [direccion, zona, comuna, precio, dormitorios, superficie]
+        when wrong column type:
+          direccion: string
+          zona: string
+          comuna: string
+          precio: integer
+          dormitorios: integer
+          superficie: integer

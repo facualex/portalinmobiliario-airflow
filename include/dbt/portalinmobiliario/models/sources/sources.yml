@@ -1,0 +1,6 @@
+version: 2
+sources:
+  - name: portalinmobiliario
+    database: portalinmobiliario-397122 
+    tables:
+      - name: apartments_rm

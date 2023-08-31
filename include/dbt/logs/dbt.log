@@ -1,0 +1,92 @@
+[0m13:10:05.987578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105631840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107969150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079691e0>]}
+
+
+============================== 13:10:05.990423 | c08dd601-67bf-4ffb-b485-9f164470623b ==============================
+[0m13:10:05.990423 [info ] [MainThread]: Running with dbt=1.6.1
+[0m13:10:05.990789 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/facualex/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:10:11.001319 [debug] [MainThread]: Starter project path: /Users/facualex/Documents/development/data-engineering/deptos-RM/deptosrm-env/lib/python3.10/site-packages/dbt/include/starter_project
+[0m13:10:11.014060 [info ] [MainThread]: 
+Your new dbt project "portalinmobiliario" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:10:11.014903 [info ] [MainThread]: Setting up your profile.
+[0m13:11:38.448094 [info ] [MainThread]: Profile portalinmobiliario written to /Users/facualex/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:11:38.450136 [debug] [MainThread]: Command `dbt init` succeeded at 13:11:38.449818 after 92.48 seconds
+[0m13:11:38.450969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105631840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107969630>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107969150>]}
+[0m13:11:38.451544 [debug] [MainThread]: Flushing usage events
+[0m13:11:48.748831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049e9840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d21120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d211e0>]}
+
+
+============================== 13:11:48.751226 | b7912111-b6d8-41a2-8b1a-4990cd94b99d ==============================
+[0m13:11:48.751226 [info ] [MainThread]: Running with dbt=1.6.1
+[0m13:11:48.751579 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/facualex/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:11:48.751949 [info ] [MainThread]: dbt version: 1.6.1
+[0m13:11:48.752239 [info ] [MainThread]: python version: 3.10.12
+[0m13:11:48.752689 [info ] [MainThread]: python path: /Users/facualex/Documents/development/data-engineering/deptos-RM/deptosrm-env/bin/python3.10
+[0m13:11:48.752949 [info ] [MainThread]: os info: macOS-13.4-arm64-arm-64bit
+[0m13:11:49.506995 [info ] [MainThread]: Using profiles dir at /Users/facualex/.dbt
+[0m13:11:49.507337 [info ] [MainThread]: Using profiles.yml file at /Users/facualex/.dbt/profiles.yml
+[0m13:11:49.507539 [info ] [MainThread]: Using dbt_project.yml file at /Users/facualex/Documents/development/data-engineering/deptos-RM/include/dbt/dbt_project.yml
+[0m13:11:49.507939 [info ] [MainThread]: adapter type: bigquery
+[0m13:11:49.508124 [info ] [MainThread]: adapter version: 1.6.3
+[0m13:11:49.508301 [info ] [MainThread]: Configuration:
+[0m13:11:49.508474 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:11:49.508643 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:11:49.508815 [info ] [MainThread]: Required dependencies:
+[0m13:11:49.509029 [debug] [MainThread]: Executing "git --help"
+[0m13:11:49.531065 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:11:49.531685 [debug] [MainThread]: STDERR: "b''"
+[0m13:11:49.531920 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:11:49.532139 [info ] [MainThread]: Connection:
+[0m13:11:49.532503 [info ] [MainThread]:   method: service-account
+[0m13:11:49.532689 [info ] [MainThread]:   database: portalinmobiliario-397122
+[0m13:11:49.532863 [info ] [MainThread]:   execution_project: portalinmobiliario-397122
+[0m13:11:49.533036 [info ] [MainThread]:   schema: portalinmobiliario.apartments_rm
+[0m13:11:49.533202 [info ] [MainThread]:   location: US
+[0m13:11:49.533369 [info ] [MainThread]:   priority: interactive
+[0m13:11:49.533536 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m13:11:49.533701 [info ] [MainThread]:   impersonate_service_account: None
+[0m13:11:49.533902 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m13:11:49.534072 [info ] [MainThread]:   job_retries: 1
+[0m13:11:49.534239 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m13:11:49.534405 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m13:11:49.534575 [info ] [MainThread]:   keyfile: /Users/facualex/Documents/development/data-engineering/deptos-RM/include/gcp/service_account.json
+[0m13:11:49.534777 [info ] [MainThread]:   keyfile_json: None
+[0m13:11:49.534944 [info ] [MainThread]:   timeout_seconds: 300
+[0m13:11:49.535107 [info ] [MainThread]:   token: None
+[0m13:11:49.535273 [info ] [MainThread]:   refresh_token: None
+[0m13:11:49.535442 [info ] [MainThread]:   client_id: None
+[0m13:11:49.535608 [info ] [MainThread]:   client_secret: None
+[0m13:11:49.535776 [info ] [MainThread]:   token_uri: None
+[0m13:11:49.535939 [info ] [MainThread]:   dataproc_region: None
+[0m13:11:49.536106 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m13:11:49.536273 [info ] [MainThread]:   gcs_bucket: None
+[0m13:11:49.536435 [info ] [MainThread]:   dataproc_batch: None
+[0m13:11:49.536742 [info ] [MainThread]: Registered adapter: bigquery=1.6.3
+[0m13:11:49.541154 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m13:11:49.541936 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:11:49.620672 [debug] [MainThread]: On debug: select 1 as id
+[0m13:11:50.376752 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=portalinmobiliario-397122&j=bq:US:1bc5ec6a-e76c-4517-b842-2d9970affce2&page=queryresults
+[0m13:11:51.068049 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:11:51.068970 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:11:51.069552 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/facualex/Documents/development/data-engineering/deptos-RM/include/dbt/dbt_project.yml> not found
+
+[0m13:11:51.070690 [debug] [MainThread]: Command `dbt debug` failed at 13:11:51.070504 after 2.33 seconds
+[0m13:11:51.071345 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:11:51.072017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049e9840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124da69e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124da6dd0>]}
+[0m13:11:51.072725 [debug] [MainThread]: Flushing usage events

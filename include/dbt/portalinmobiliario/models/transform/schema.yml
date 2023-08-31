@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fact_rent
+    description: "Fact Table"
+    columns:
+      - name: apartment_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_apartment
+    description: "Dimension Apartment"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
