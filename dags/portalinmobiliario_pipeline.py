@@ -8,7 +8,7 @@ from datetime import datetime
 @dag(
     start_date = datetime(2023, 8, 31),
     schedule = "@monthly",
-    catchup = False,
+    catchup = True,
     tags = ['portalinmobiliario'],
 )
 def portalinmobiliario():
@@ -16,7 +16,7 @@ def portalinmobiliario():
     # This task may not be easy, the scrape script uses selenium
     # so it needs a WebDriver. Maybe running it inside a Docker container
     # in some way. Research required.
-    # Ideal scheduling: once a month, and trigger re-run of the whole pipeline.
+    # Ideal scheduling: once per week, and trigger re-run of the whole pipeline.
 
     # TASK: Execute UF value scraper
     @task.external_python(python = '/Users/facualex/Documents/development/data-engineering/deptos-RM/deptosrm-env/bin/python')
@@ -59,7 +59,7 @@ def portalinmobiliario():
         task_id='uf_dataset_from_gcs_to_bq',
         bucket='facundoalexandre_portalinmobiliario',
         source_objects=['raw/uf-values.csv'],
-        destination_project_dataset_table='portalinmobiliario.uf_values',
+        destination_project_dataset_table='portalinmobiliario.uf-values',
         schema_fields=[
             {'name': 'date', 'type': 'STRING'},
             {'name': 'value', 'type': 'STRING'},
@@ -73,7 +73,7 @@ def portalinmobiliario():
         task_id='apartments_dataset_from_gcs_to_bq',
         bucket='facundoalexandre_portalinmobiliario',
         source_objects=['raw/apartments.csv'],
-        destination_project_dataset_table='portalinmobiliario.apartments_rm',
+        destination_project_dataset_table='portalinmobiliario.apartments-rm',
         schema_fields=[
             {'name': 'direccion', 'type': 'STRING'},
             {'name': 'zona', 'type': 'STRING'},

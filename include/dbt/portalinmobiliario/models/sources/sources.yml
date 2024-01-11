@@ -4,3 +4,4 @@ sources:
     database: portalinmobiliario-397122 
     tables:
       - name: apartments_rm
+      - name: uf_values
